@@ -3,13 +3,13 @@
 Version:        1.03
 Date:           5/16/2026
 Author:         Malloc83
+
 **This file and associated code is licensed under the MIT License, see LICENSE.txt**
 
 ## Why is this project useful?
 
 
 ## Functionality of the program ##
-
 
 ### Flags ###
 The GET_STR defined function uses bitwise **flags** used during input validation when getting a string.
