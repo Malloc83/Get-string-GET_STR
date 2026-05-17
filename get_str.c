@@ -1,7 +1,7 @@
 /*
 File:           get_str.c | version: 1.03
 Last updated:   05/16/2026 
-By:             Tom Burm
+By:             Malloc83
 Purpose:        GET_STR: standardized reusable function to obtain STRING via USER INPUT */   
 
 /*----------------*/
