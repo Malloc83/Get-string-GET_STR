@@ -91,7 +91,7 @@ for (size_t i = 0; i < len; i++) {
         
 }  
 ```
-For the validation check the basecase is that all inputted charactes are alphanumeric (isalnum(ch)), and then with logival OR(||) the exceptions are checked in case the character would not be alphanumric to maintain the 'valid' variable TRUE for the 5 defined exceptions. 
+For the validation check the basecase is that all inputted charactes are alphanumeric (isalnum(ch)), and then with logical OR(||) the exceptions are checked in case the character would not be alphanumric to maintain the 'valid' variable TRUE for the 5 defined exceptions. 
 
 For this exception validation the **flags** and the **presets** are used in a bitwise AND (&) comparison. This means that the bit corresponding to a specific flag needs to be present in the preset as per function input variable **flag**.
 
@@ -111,9 +111,9 @@ int valid =
 
 An example of the bitewise AND (&) comparison is provided for case that flags == INPUT_SENTENCE and if spaces are allowed (ALLOW_SPACES). In this case the INPUT_SENTENCE flags contains the 'ALLOW_SPACES' flag identifier as well and hence the statement (INPUT_SENTENCE & ALLOW_SPACES) is TRUE as in both the most left (2^0) bit is switched on as TRUE (1).
 ```text
-ALLOW_SPACES       = 1u << 0                                    --> bit sequence: 0000000**1**  
+ALLOW_SPACES       = 1u << 0                                    --> bit sequence: 00000001  
 
-INPUT_SENTENCE      NO_ONLY_WHITESPACE, ALLOW_SPACES, ALLOW_DOT --> bit sequence: 0000101**1**  
+INPUT_SENTENCE      NO_ONLY_WHITESPACE, ALLOW_SPACES, ALLOW_DOT --> bit sequence: 00001011  
   bit sequence                00001000      00000001   00000010  
 ```
 When at least one condition is TRUE in the overall validation then the int variable **valid** is set to TRUE.
